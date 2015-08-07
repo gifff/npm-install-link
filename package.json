@@ -1,0 +1,19 @@
+{
+  "name": "install-link",
+  "version": "0.1.0",
+  "description": "Install and link local repositories",
+  "main": "install.js",
+  "scripts": {
+    "install": "node install.js",
+    "test": "npm run lint",
+    "lint": "eslint install.js && echo Lint passed."
+  },
+  "author": "Song Seung Geun <giff.song@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "findup-sync": "^0.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^1.0.0"
+  }
+}
