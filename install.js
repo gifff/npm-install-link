@@ -5,6 +5,7 @@ var execSync = require('child_process').execSync;
 var findup = require('findup-sync');
 
 var pkgpath = findup('package.json');
+var pkgdir = path.dirname(pkgpath);
 var pkg = require(pkgpath);
 
 var links = pkg.links || [];
@@ -12,7 +13,7 @@ var links = pkg.links || [];
 module.exports = links.map(function (link) {
 
   // execute npm install in link directory
-  var abspath = path.join(pkgpath, link);
+  var abspath = path.join(pkgdir, link);
   var installcmd = 'npm install --production';
 
   console.log(abspath + '$', installcmd);
@@ -23,9 +24,9 @@ module.exports = links.map(function (link) {
   // Link
   var linkcmd = 'npm link ' + link;
 
-  console.log(pkgpath + '$', linkcmd);
+  console.log(pkgdir + '$', linkcmd);
   execSync(linkcmd, {
-    cwd: path.dirname(pkgpath)
+    cwd: pkgdir
   });
 
   return abspath;
