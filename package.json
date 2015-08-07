@@ -12,7 +12,7 @@
   },
   "author": "Song Seung Geun <giff.song@gmail.com>",
   "license": "MIT",
-  "repository: "gifff/npm-install-link",
+  "repository": "gifff/npm-install-link",
   "dependencies": {
     "findup-sync": "^0.2.1"
   },
