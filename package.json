@@ -12,10 +12,19 @@
   },
   "author": "Song Seung Geun <giff.song@gmail.com>",
   "license": "MIT",
+  "repository: "gifff/npm-install-link",
   "dependencies": {
     "findup-sync": "^0.2.1"
   },
   "devDependencies": {
     "eslint": "^1.0.0"
-  }
+  },
+  "keywords": [
+    "npm",
+    "link",
+    "install",
+    "relative",
+    "local",
+    "path"
+  ]
 }
