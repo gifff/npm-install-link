@@ -25,7 +25,7 @@ module.exports = links.map(function (link) {
 
   console.log(pkgpath + '$', linkcmd);
   execSync(linkcmd, {
-    cwd: pkgpath
+    cwd: path.dirname(pkgpath)
   });
 
   return abspath;
