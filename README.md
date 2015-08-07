@@ -26,7 +26,9 @@ Install and link local repositories
 
 ## Usage
 
-Add "links" property which contains relative paths of local repositories in package.json
+Add "links" property which contains relative paths of local repositories in package.json.
+
+Then run `install-link`
 
 ## Installation
 
